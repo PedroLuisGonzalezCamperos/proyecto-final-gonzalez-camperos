@@ -1,0 +1,24 @@
+td {
+
+    text-align: center;
+    
+    
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    .contenedor {
+    
+    display: flex;
+    justify-content: center;
+    
+    }
+    
+    .contenedor2 {
+    
+    text-align: center;
+    
+    
+    }

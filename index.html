@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <h1>Inventario de Tienda</h1>
+    <div class="contenedor">
+      <table border="1">
+        <!--Encabezado de tabla inicio-->
+        <tr>
+          <th>Productos</th>
+          <th>Precios de venta en Dólares</th>
+          <th>Cantidad</th>
+          <th>Aumentar Cantidad</th>
+          <th>Cantidades vendidas</th>
+          <th>Cantidad Final</th>
+        </tr>
+        <!--Encabezado de tabla Final-->
+
+        <!--Fila 1 de tabla inicio-->
+
+        <tr>
+          <th>Polos</th>
+          <td id="precio1"></td>
+          <td id="producto1"></td>
+          <td><input type="number" id="agregar1" value="0" /></td>
+          <td><input type="number" id="restar1" value="0" /></td>
+          <td id="cantidadF1">10</td>
+        </tr>
+
+        <!--Fila 1 de tabla final-->
+
+        <!--Fila 2 de tabla inicio-->
+        <tr>
+          <th>Pantalones</th>
+          <td id="precio2"></td>
+          <td id="producto2"></td>
+          <td><input type="number" id="agregar2" value="0" /></td>
+          <td><input type="number" id="restar2" value="0" /></td>
+          <td id="cantidadF2">18</td>
+        </tr>
+
+        <!--Fila 2 de tabla final-->
+
+        <!--Fila 3 de tabla inicio-->
+        <tr>
+          <th>Chaquetas</th>
+          <td id="precio3"></td>
+          <td id="producto3"></td>
+          <td><input type="number" id="agregar3" value="0" /></td>
+          <td><input type="number" id="restar3" value="0" /></td>
+          <td id="cantidadF3">32</td>
+        </tr>
+        <!--Fila 3 de tabla final-->
+
+        <!--Fila 4 de tabla inicio-->
+
+        <tr>
+          <th>Sudaderas</th>
+          <td id="precio4"></td>
+          <td id="producto4"></td>
+          <td><input type="number" id="agregar4" value="0" /></td>
+          <td><input type="number" id="restar4" value="0" /></td>
+          <td id="cantidadF4">20</td>
+        </tr>
+
+        <!--Fila 4 de tabla final-->
+
+        <!--Fila 5 de tabla inicio-->
+        <tr>
+          <th>Shorts</th>
+          <td id="precio5"></td>
+          <td id="producto5"></td>
+          <td><input type="number" id="agregar5" value="0" /></td>
+          <td><input type="number" id="restar5" value="0" /></td>
+          <td id="cantidadF5">29</td>
+        </tr>
+
+        <!--Fila 5 de tabla final-->
+      </table>
+    </div>
+
+    <br />
+
+    <div class="contenedor2">
+     
+      <h3>
+        Si desea actualizar las cantidades del Inventario haga click en el
+        siguiente botón
+      </h3>
+      <button onclick="inventario()">Actualizar Cantidad</button><br /><br />
+      <p id="mensajeError"></p>
+      <h3>
+        Si desea conocer el monto total a pagar haga click en el siguiente botón
+      </h3>
+      <button onclick="pagar()">Total a pagar cliente</button><br /><br />
+      <p id="montaPagar"></p>
+
+      <h3>
+        Si desea conocer la cantidad de artículos que aun no se han agregado al
+        Inventario <br />
+        pulse el siguiente botón
+      </h3>
+      <br />
+      <button onclick="articulosdemas()">Consultar</button><br /><br />
+      <p id="textoFuera"></p>
+      <br /><br />
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
